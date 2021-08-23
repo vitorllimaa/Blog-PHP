@@ -5,35 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Pessoal</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="backdrop"></div>
    <nav class="navbar fixed-top navbar bg">
-
-    <a href="#" class="navbar-brand">
-        <img src="https://1hmh7b2qh9dp40n69v3cg14o-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/Logo-Annie-Bello-12.png" alt="">
+    
+    <a href="#" class="navbar-brand" id="logo">
+        <img src="img/cabeçalho/logo.png" alt="">
     </a>
+    <div class="icon">
+        <form action="/" method="POST" class="form-inline">
+            <div class="form-group">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                  aria-describedby="search-addon" />
+                  <button type="submit" class="navbar-toggler d-lg-none m-2" id="search">
+                    <img src="img/cabeçalho/search.png" alt="search">
+                   </button>
+                   <button type="button" class="navbar-toggler d-lg-none menu m-1" id="menu">
+                    <img src="img/cabeçalho/hamburger.gif" alt="Menu">
+                </button>
+              </div> 
+        </form>
 
-       <button type="button" class="navbar-toggler d-lg-none" id="menu">
-           <img src="img/cabeçalho/hamburger.gif" alt="Menu">
-       </button>
-
-       <button class="navbar-toggler  d-lg-none" id="search">
-        <img src="img/cabeçalho/search.png" alt="">
-       </button>
-
+    </div>
+    <ul class="list-unstyled-font-weight-bold">
+        <li class="media media-avatar m-2">
+            <img src="img/cabeçalho/foto perfil.jpg" alt="">
+            <div class="media-body mx-2">
+                <p>Vitor Lima</p>
+                <small>Blog Pessoal</small>
+            </div>
+        </li>
+        <li class="divider"></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Dica do dia</a></li>
+        <li><a href="">Nutrição</a></li>
+        <li><a href="">Alimentação</a></li>
+        <li><a href="">Frutas que devemos consumir diariamente</a></li>
+    </ul>
    </nav> 
 
-   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+   <div class="container">
+    <div class="row">
+        <div class="row no-gutters">
+            <div class="col-12">
+                <h1>“Suplementos para emagrecer: não funcionam e colocam a saúde em risco!”</h1>
+                <img src="img/conteúdo/image_720-10.png" class="img-fluid"  alt="">
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-   <script src="javascript/controller.js"></script>
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="javascript/controller.js"></script>
 </body>
 </html>

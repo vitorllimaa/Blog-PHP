@@ -1,4 +1,4 @@
-* {
+body {
     box-sizing: border-box;
     font-family: 'Hind', sans-serif;
     background-color: #f7f2ec;
@@ -10,6 +10,10 @@ nav {
   border-bottom: rgb(219, 207, 207) solid 1px !important;
   padding: 24px !important;
   justify-content: flex-end;
+}
+
+.navbar {
+    position: relative;
 }
 
 .navbar-toggler {
@@ -24,17 +28,115 @@ nav {
     background-color: transparent;
 }
 
+.navbar a img {
+    width: 80px;
+    height: 80px;
+}
+
+.navbar .row {
+    background: transparent;
+}
+
 .navbar button {
     border: none;
 }
 
-#menu img {
+.navbar .menu img{
     background-color: #1b1b1b;
 }
-#menu {
-    
-    padding-left: 150px;
+
+.navbar .close img {
+    background-color: transparent;
+    margin: 10px;
 }
+
+.navbar ul {
+    background-color:#efe9e4!important;
+    list-style-type: none;
+    border-right:rgb(219, 207, 207) solid 1px ;
+    border-top:rgb(219, 207, 207) solid 1px ;
+    position: absolute;
+    padding-left: 0;
+    max-width: 250px;
+    top: 137px;
+    right: -250px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    transition: all 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    opacity: .5;
+}
+
+.navbar ul.open {
+    right: 0;
+    opacity: 1;
+}
+
+.navbar ul li {
+    padding: 0.5em 1em;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black!important;
+}
+
+.navbar ul li.divider {
+    border-top: gray 0.5px solid;
+    margin: 1em;
+    padding: 0;
+}
+
+.navbar ul p {
+    margin: 0;
+}
+
+.navbar .media img {
+    height: 45px;
+}
+
+.navbar form input {
+    max-width: 150px;
+    
+}
+
+.backdrop {
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+@media (min-width: 0px) {
+    .form-inline .form-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
+    }
+}
+
+@media (max-width: 413px) {
+    #search {
+        display: none;
+    }
+}
+
+
+
+
+/* conteúdo */
+
+
+
 
 
 
