@@ -1,48 +1,42 @@
 body {
-    box-sizing: border-box;
-    font-family: 'Hind', sans-serif;
+    font-size: 15px;
     background-color: #f7f2ec;
+    color:#676767;
 }
 
 /* cabeçalho da pagina */
 nav {
   background-color: #efe9e4!important;
-  border-bottom: rgb(219, 207, 207) solid 1px !important;
-  padding: 24px !important;
+  border-bottom: rgb(219 207 207 / 42%) solid 1px !important;
   justify-content: flex-end;
-}
-
-.navbar {
-    position: relative;
+  padding: 5px!important;
 }
 
 .navbar-toggler {
     border: none;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     background-color: transparent!important;
 }
 
-.navbar img{
+.navbar a img {
+    width: 123px;
+    height: 58px;
+}
+
+.navbar form img{
     height: 24px;
     background-color: transparent;
 }
 
-.navbar a img {
-    width: 80px;
-    height: 80px;
-}
-
-.navbar .row {
-    background: transparent;
-}
-
-.navbar button {
-    border: none;
+/* Imagens de perfil configurada */
+.navbar .media img, .container .feedback-user img {
+    height: 55px;
+    width: auto;
+    border-radius: 50px;
 }
 
 .navbar .menu img{
-    background-color: #1b1b1b;
+    background-color: #77716b91;
 }
 
 .navbar .close img {
@@ -58,7 +52,7 @@ nav {
     position: absolute;
     padding-left: 0;
     max-width: 250px;
-    top: 137px;
+    top: 77px;
     right: -250px;
     height: calc(100vh - 80px);
     overflow-y: auto;
@@ -89,10 +83,6 @@ nav {
 
 .navbar ul p {
     margin: 0;
-}
-
-.navbar .media img {
-    height: 45px;
 }
 
 .navbar form input {
@@ -130,13 +120,51 @@ nav {
     }
 }
 
+@media (max-width: 280px) {
+    .navbar form .form-group > input {
+        width: 90px;
+    }
+    .navbar a img{
+        display: none;
+    }
+}
+
 
 
 
 /* conteúdo */
 
 
+.container {
+    padding: 79px 50px;
+    
+}
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 27.3px;
+} 
+
+.feedback-user {
+    display: flex;
+    align-items: center;
+}
+
+.text span {
+    display: block;
+}
+
+p {
+    font-family: 'inherit', sans-serif;
+    font-size: 100%;
+    
+}
+
+.card img {
+    border: #8080801a 1px solid;
+    border-radius: 12px;
+}
 
 
 
